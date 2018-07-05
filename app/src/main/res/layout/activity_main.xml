@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/aelogo"
+
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Device Number" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/DeviceNumber"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:ems="10"
+                android:inputType="number" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Periodic Time" />
+
+            <EditText
+                android:id="@+id/PeriodicTime"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@android:color/white"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="MF" />
+
+            <EditText
+                android:id="@+id/MF"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:ems="10"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="ID" />
+
+            <EditText
+                android:id="@+id/ID"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@android:color/white"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Server 1" />
+
+            <EditText
+                android:id="@+id/Server1"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:ems="10"
+                android:inputType="number"
+                android:text="9983053634"
+                 />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Server 2" />
+
+            <EditText
+                android:id="@+id/Server2"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:ems="10"
+                android:inputType="number"
+                android:text="x" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Server 3" />
+
+            <EditText
+                android:id="@+id/Server3"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:ems="10"
+                android:inputType="number"
+                android:text="x" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Alert 1" />
+
+            <EditText
+                android:id="@+id/Alert1"
+
+                android:layout_width="match_parent"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="9414319394" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:text="Alert 2" />
+
+            <EditText
+                android:id="@+id/Alert2"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:ems="10"
+                android:inputType="number"
+                android:text="x" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Sensor Lower" />
+
+            <EditText
+                android:id="@+id/SensorLowPoint"
+
+                android:layout_width="match_parent"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="Sensor Higher" />
+
+            <EditText
+                android:id="@+id/SensorHighPoint"
+
+                android:layout_width="match_parent"
+                android:textColor="@android:color/white"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="100" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/MessageSendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_menu_send"
+
+
+        />
+
+
+</RelativeLayout>
